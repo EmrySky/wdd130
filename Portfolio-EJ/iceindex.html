@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Class Exercises | Emily Jenkins</title>
+  <style>
+    body { 
+      background: linear-gradient(to bottom, #7d82e9, #9d370f);
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Header styling */
+    header {
+      background-image: url("images/flames.jpg");
+      color: #290726;
+      padding: 20px;
+      text-align: left;
+      font-size:larger;
+    }
+
+    .logo {
+      transition: all 0.4s ease;
+    }
+
+    .logo:hover {
+      border-radius: 50%;
+      box-shadow:
+        0 0 25px 10px rgba(255, 102, 0, 0.8),
+        0 0 50px 20px rgba(0, 128, 255, 0.6);
+    }
+
+    /* Navigation bar */
+    nav {
+      background-image: url(images/flames.jpg);
+      text-align: center;
+    }
+
+    nav a {
+      color: #2E1A17;
+      text-decoration: none;
+      font-size: 30px;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    /* Main content */
+    main {
+      padding: 20px;
+      background-color: #f5b6c5;
+      text-align: center;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: rgba(81, 17, 55, 0.4);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .ice-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Each ICE card */
+.ice-item {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 10px;
+}
+
+.ice-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.5);
+}
+
+/* Make images taller and not cut off */
+.ice-item img {
+  width: 100%;
+  height: 230px; /* increased from 180px */
+  object-fit: contain; /* show full image without cutting */
+  background-color: rgba(0, 0, 0, 0.1); /* adds contrast if image has transparent edges */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Caption area */
+.ice-caption {
+  padding: 20px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ice-caption h3 {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.ice-caption p {
+  font-size: 1em;
+  color: #eee;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My In-Class Exercises</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>In-Class Exercises</h2>
+      <p>Each of these exercises was completed during class to strengthen my HTML, CSS, and design skills.</p>
+    </section>
+
+    <section class="ice-gallery">
+
+      <div class="ice-item">
+        <a href="/ice/prophet_cards/nelson.html" target="_blank">
+          <img src="/images/ICE1-prophet.png" alt="ICE 1-Prophet Card">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 1: Prophet Card</h3>
+          <p>Created a clean card layout using HTML structure and semantic tags.</p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/apostle_spotlight/apostles.html" target="_blank">
+          <img src="/images/ICE2-apostle.png" alt="ICE 2-Apostles Spotlight">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 2: Apostles Spotlight</h3>
+          <p>Styled layouts with internal CSS practice</p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/favorite_devo/favdevo.html" target="_blank">
+          <img src="/images/ICE3-Favdevo.png" alt="ICE 3-Favorite Devotional Table">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 3: Favorite Devotional Table</h3>
+          <p>Used HTML and created a table displaying favorite BYU and BYUI Devotionals </p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/halloween/index.html" target="_blank">
+          <img src="/images/ICE4-Holiday.png" alt="ICE 4-Holiday Page">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 4: Holiday Page</h3>
+          <p>Challenged to add css to set up HTML with creative freedom.</p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/grid_flags/flags.html" target="_blank">
+          <img src="/images/ICE5-Flags.png" alt="ICE 5-Grid Practice with Flags">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 5: Grid Practice with Flags</h3>
+          <p>Used CSS Grid to design flag layouts with precision and spacing.</p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/positioning/positioning.html" target="_blank">
+          <img src="/images/ICE6-Positioning.png" alt="ICE 6-Positioning Challenge with CSS">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 6: Positioning Challenge</h3>
+          <p>Practiced absolute, relative, and fixed positioning techniques.</p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/gallery/gallery.html" target="_blank">
+          <img src="/images/ICE7-Image.png" alt="ICE 7-Image Gallery Challenge">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 7: Image Gallery</h3>
+          <p>Challenged to condense image sizes in order to make the images load faster.</p>
+        </div>
+      </div>
+
+      <div class="ice-item">
+        <a href="/ice/signup/signup.html" target="_blank">
+          <img src="/images/ICE8-Signup.png" alt="ICE 8-Make a Sign-Up Sheet">
+        </a>
+        <div class="ice-caption">
+          <h3>ICE 8: Sign-Up Form</h3>
+          <p>Built a form and styled using CSS and altering the basic blueprint of HTML and JavaScript input.</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="EJportfolio.html">Home</a>
+    </nav>
+    <p>&copy; Emily Jenkins 2025</p>
+  </footer>
+</body>
+</html>

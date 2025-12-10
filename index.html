@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Class Exercises | Emily Jenkins</title>
+  <style>
+
+    .ice-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 50px;
+  text-align: center;
+}
+
+.ice-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ice-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.5);
+}
+
+.ice-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.ice-caption {
+  padding: 15px;
+}
+
+.ice-caption h3 {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.ice-caption p {
+  font-size: 0.95em;
+  color: #eee;
+  margin-top: 5px;
+}
+
+/* Active nav link */
+nav a.active {
+  color: #ff6600;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.8);
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Emily Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="ice.html" class="active">ICE</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>In-Class Exercises</h1>
+    <p>Each of these exercises was completed during class to strengthen my HTML, CSS, and design skills.</p>
+  </section>
+
+  <section class="ice-gallery">
+    <div class="ice-item">
+      <a href="ice/ice1/index.html" target="_blank">
+        <img src="images/ice1-thumbnail.jpg" alt="ICE 1">
+      </a>
+      <div class="ice-caption">
+        <h3>ICE 1: HTML Structure</h3>
+        <p>This project focused on learning basic HTML tags and creating a clean page layout.</p>
+      </div>
+    </div>
+
+    <div class="ice-item">
+      <a href="ice/ice2/index.html" target="_blank">
+        <img src="images/ice2-thumbnail.jpg" alt="ICE 2">
+      </a>
+      <div class="ice-caption">
+        <h3>ICE 2: CSS Styling</h3>
+        <p>We practiced applying internal CSS to improve visual design and learn about color palettes.</p>
+      </div>
+    </div>
+
+    <div class="ice-item">
+      <a href="ice/ice3/index.html" target="_blank">
+        <img src="images/ice3-thumbnail.jpg" alt="ICE 3">
+      </a>
+      <div class="ice-caption">
+        <h3>ICE 3: Responsive Grid</h3>
+        <p>In this exercise, we built a responsive grid layout that adjusts smoothly to different screen sizes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Emily Jenkins 2025</p>
+  </footer>
+
+</body>
+</html>

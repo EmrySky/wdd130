@@ -1,0 +1,45 @@
+/* Add your CSS here to style your halloween page */
+
+body{
+    background: linear-gradient(to bottom, purple, orange);
+}
+#wrapper{
+    
+}
+
+header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white
+}
+img{ 
+    border: 3px solid #291204;
+  border-radius: 0;         
+  transition: border-radius 0.4s ease;
+  width: 250px;
+  height: 250px;
+  transition:0.4s ease; 
+}
+
+img:hover {
+  border-radius: 50%;
+  content: url("jackolantern.jpg")}
+
+  div {
+  width: 250px;
+  height: 250px;
+  background: url("example.jpg") center/cover;
+  transition: 0.4s ease;
+}
+
+img:hover {
+  background-image: url("jackolantern.png");
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px orange;
+}
+p{
+  font-size: larger;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
