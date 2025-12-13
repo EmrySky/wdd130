@@ -1,114 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>In-Class Exercises | Emily Jenkins</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Emily Jenkins Portfolio</title>
   <style>
+    /* Body and background */
+    body { 
+      background: linear-gradient(to bottom, #7d82e9, #9d370f);
+      min-height: 100vh;
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      color: #fdf1e7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    .ice-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  padding: 50px;
-  text-align: center;
-}
+    /* Header */
+    header {
+      width: 100%;
+      background-image: url(images/flames.jpg);
+      background-size: cover;
+      background-position: center;
+      color: #2E1A17;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
 
-.ice-item {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 15px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    /* Logo in header */
+    .logo {
+      border-radius: 50%;
+      box-shadow: 0 0 25px 10px rgba(255, 102, 0, 0.8);
+      transition: all 0.4s ease;
+    }
 
-.ice-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(255, 102, 0, 0.5);
-}
+    .logo:hover {
+      transform: scale(1.05);
+      box-shadow: 
+        0 0 25px 10px rgba(255, 102, 0, 1),
+        0 0 50px 20px rgba(255, 0, 0, 0.6);
+    }
 
-.ice-item img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
+    /* Navigation (if needed later) */
+    nav a {
+      background-image: url("images/flames.jpg");
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: rgba(200, 200, 200, 0.4);
+    }
 
-.ice-caption {
-  padding: 15px;
-}
+    /* Main section */
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-.ice-caption h3 {
-  margin-top: 10px;
-  color: #fff;
-  font-size: 1.2em;
-}
+    /* Logo grid */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 40px;
+      justify-items: center;
+      margin-top: 40px;
+    }
 
-.ice-caption p {
-  font-size: 0.95em;
-  color: #eee;
-  margin-top: 5px;
-}
+    .logo-grid img {
+      width: 150px;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      border-radius: 10px;
+    }
 
-/* Active nav link */
-nav a.active {
-  color: #ff6600;
-  text-shadow: 0 0 8px rgba(255, 102, 0, 0.8);
-}
+    .logo-grid img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 25px rgba(255, 140, 0, 0.9));
+    }
 
+    /* Text styles */
+    h2 {
+      font-size: 2rem;
+      color: #fff4e0;
+      margin-top: 40px;
+      text-shadow: 0 0 12px rgba(255, 128, 0, 0.7);
+    }
+
+    p {
+      max-width: 650px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-top: 10px;
+      color: #fff0d5;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      background-color: rgba(81, 17, 55, 0.4);
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="images/logo.png" alt="Emily Logo" class="logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
-      <a href="ice.html" class="active">ICE</a>
+      <a href="allaboutme.html">
+        <img src="images/logo.png" alt="Emily Logo" class="logo" width="150">
+      </a>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>In-Class Exercises</h1>
-    <p>Each of these exercises was completed during class to strengthen my HTML, CSS, and design skills.</p>
-  </section>
+  <main>
+    <h2>Welcome to My Portfolio</h2>
+    <p>
+      Explore my collection of projects from WDD130 at BYU–Idaho.  
+      Here you'll find web development assignments, and  
+      in-class exercises that show my progress in coding throughout the semester.
+    </p>
 
-  <section class="ice-gallery">
-    <div class="ice-item">
-      <a href="ice/ice1/index.html" target="_blank">
-        <img src="images/ice1-thumbnail.jpg" alt="ICE 1">
+    <div class="logo-grid">
+      <a href="whitewaterindex.html">
+        <img src="wwr/images/logo.png" alt="White Water Rafting Logo">
       </a>
-      <div class="ice-caption">
-        <h3>ICE 1: HTML Structure</h3>
-        <p>This project focused on learning basic HTML tags and creating a clean page layout.</p>
-      </div>
-    </div>
-
-    <div class="ice-item">
-      <a href="ice/ice2/index.html" target="_blank">
-        <img src="images/ice2-thumbnail.jpg" alt="ICE 2">
+      <a href="iceindex.html">
+        <img src="images/icelogo.png" alt="ICE Project Logo">
       </a>
-      <div class="ice-caption">
-        <h3>ICE 2: CSS Styling</h3>
-        <p>We practiced applying internal CSS to improve visual design and learn about color palettes.</p>
-      </div>
-    </div>
-
-    <div class="ice-item">
-      <a href="ice/ice3/index.html" target="_blank">
-        <img src="images/ice3-thumbnail.jpg" alt="ICE 3">
+      <a href="client_report.html">
+        <img src="images/report.png" alt="Client Report Logo">
       </a>
-      <div class="ice-caption">
-        <h3>ICE 3: Responsive Grid</h3>
-        <p>In this exercise, we built a responsive grid layout that adjusts smoothly to different screen sizes.</p>
-      </div>
     </div>
-  </section>
+  </main>
 
   <footer>
-    <p>© Emily Jenkins 2025</p>
+    <p>&copy; 2025 Emily Jenkins | Crafted with creativity & code ✨</p>
   </footer>
-
 </body>
 </html>
